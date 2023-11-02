@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Class Predictor😋</title>
+</head>
+<body>
+    <h1 align="center"><u>Food101 Image Classifier</u></h1>
+    <h3 align="center">Classifies 101 food classes</h3>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="file">Upload food image😋</label>
+        <input type="file" name="imagefile" required>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <div align="center">
+    {% block content %}
+    {% endblock %}
+    </div>
+</body>
+</html>

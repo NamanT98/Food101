@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+    {% block content %}
+    {% if prediction %}
+        <img src="{{img}}" height="300px" width="300px">
+        <p>Your Image: <strong>{{prediction}}</strong> </p>
+    {% endif %}
+    {% endblock %}
